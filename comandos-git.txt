@@ -1,0 +1,79 @@
+Aprendendo a versionar com git
+
+Comandos mais comuns no GIT:
+-----------------------------------
+- git init 
+	sinaliza o git para monitorar essa pasta)
+- git status 
+	verifica a situação dos arquivos na pasta do projeto
+- git log
+	verifica os históricos de modificação 
+	Dicas para verificar diferentes logs: https://devhints.io/git-log
+
+- git log --oneline
+	tras as informações reduzidas de historico de commits em um linha
+
+- git log -p
+	tras as modificações realizadas
+
+- git log --pretty="format:%H"
+	tras somente o Hash do commit
+
+- git init --bare
+	inicia um repositório como servidor apenas como versionador
+
+- git remote add origin <local servidor>
+
+- git remote
+
+- git remote -v
+
+- git clone <caminho a ser clonado>
+
+- git push origin <local do servidor>
+
+- git pull origin master
+
+# Sobre branchs
+-----------------------------------
+- git checkout -b <nome branch>
+	cria e muda para a branch informada
+
+- git checkout <nome branch>
+	muda para a branch informada
+
+- git branch
+	para ver as branchs que possui
+
+- git branch <nome>
+	para criar uma branch nova
+
+# Sobre merge
+-----------------------------------
+- git merge <branch que quer realizar o merge>
+
+# Sobre atualizar branchs
+- git rebase <branch>
+
+- git log --graph
+	para ver a linha de desenvolvimento das branchs
+
+# Sobre revert de commit
+-----------------------------------
+- git revert <hash do commit>
+
+# Sobre guardar alterações
+-----------------------------------
+- git stash
+
+- git stash list
+
+- git stash pop
+	realiza merge com as alterações anteriormente guardadas
+
+<<<<<<< Updated upstream
+=======
+# Sobre voltar no tempo
+
+- git checkout <hash commit>
+>>>>>>> Stashed changes
